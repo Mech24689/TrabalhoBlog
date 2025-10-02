@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina 11</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/11.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
         </div>
         <nav class="Menu">
             <ui>
-                <li><a href="10.html">Início</a></li>
+                <li><a href="11.html">Início</a></li>
                 <li><a href="#">Paginas</a></li>
                 <li><a href="#">Destaques</a></li>
                 <li><a href="#">Assinar</a></li>
@@ -21,23 +21,39 @@
             </ui>
         </nav>
         <div class="inputHeader">
-            <input type="text" placeholder="   Pesquisar...">
-            <button>Buscar</button>
-            <button>Entrar</button>
+           <input type="text" placeholder="Buscar...">
+            <button class="btn-buscar">Buscar</button>
+            <button class="btn-entrar">Entrar</button>
         </div>
     </header>
-    <main></main>
-    <aside></aside>
+    
+    <main>
+        <section class="newsletter-section">
+            <div class="newsletter-box">
+                <h2>Assine a newsletter</h2>
+                <form>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    
+                    <div class="privacy-consent">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">Concordo em receber comunicações e li a política de privacidade.</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-assinar">Assinar</button>
+                </form>
+            </div>
+        </section>
+        </main>
+    
     <footer>
-        <div class="rodape">
+        <div class="rodape tags-section"> 
             <div class="divbox">Instagram</div>
             <div class="divbox">Work</div>
             <div class="divbox">Bags</div>
             <div class="divbox">Lamp</div>
             <div class="divbox">Books</div>
         </div>
-        <p> &copy; 2025 Meu Site. </p>
-    
+        <p class="copyright"> &copy; 2025 Meu Site • Meu site </p>
     </footer>
 </body>
 </html>

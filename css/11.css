@@ -20,19 +20,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(232, 232, 232);
     font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr .2fr;
+    /* numero de colunas maximo 2 */
+    grid-template-rows: .1fr .1fr 1fr .1fr;
+    /* numero de linhas maximo 3 */
+
+    grid-template-areas: "header header"
+        "menu menu"
+        "main ldir"
+        "footer footer";
     height: 100vh;
 }
 
 /* Estilização header */
 header {
     width: 100vw;
-    height: 5rem;
-    /* position: fixed; */
+    height: 10vh;
+    position: fixed;
     grid-area: header;
     background-color: rgb(255, 255, 255);
+    padding: .5rem;
     display: grid;
     grid-template-columns: .1fr 1fr 0.4fr;
     /* numero de colunas maximo 3 */
@@ -58,6 +66,13 @@ header {
     background-color: rgb(255, 255, 255);
     margin-left: 2%;
 }
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-md); 
+}
+
 
 ui {
     display: flex;
@@ -88,7 +103,6 @@ li:hover {
 }
 
 .inputHeader > input{
-    font-size: 1rem;
     height: 70%;
     border-radius: 5px;
     width: 50%;
@@ -96,7 +110,6 @@ li:hover {
 }
 
 .inputHeader > button{
-    font-size: 1rem;
     height: 80%;
     width: 20%;
     border-radius: 5px;
@@ -108,9 +121,10 @@ li:hover {
 /* Estilização footer */
 
 footer {
-    /* position: fixed; */
+    bottom: 0;
+    position: fixed;
     padding-top: 2%;
-    height: 7rem;
+    height: 17%;
     width: 100vw;
     grid-area: footer;
     background-color: #ffffff;
@@ -165,42 +179,115 @@ footer {
 
 footer > p{
     margin-left: 1%;
-}
 
-/* Estilização do resto do codigo */
 
-/* Tela 8 */
-.section-8{
+    /* Parte de extilização do centro da tela */
+
+
+
+    }
+.newsletter-section {
+    
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0; 
+}
+     
+
+
+.newsletter-box {
+    width: 90%;
+    max-width: 550px;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+
+.newsletter-box h2 {
+    font-size: 1.5rem;
+    font-weight: 500; 
+    margin-bottom: 1.5rem;
+}
+
+
+/* Estilização dos campos do formulário */
+.newsletter-box input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+}
+
+/* Estilização da caixa de consentimento */
+.privacy-consent {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: red;
-    height: 100%;
-    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: #555;
 }
 
-.section-8 > section{
-    min-height: 20%;
-    width: 100%;
-    background-color: aqua;
+.privacy-consent input[type="checkbox"] {
+    margin-right: 0.6rem;
 }
 
-.teste{
-    background-color: purple;
-    height: 10vh;
+/* Estilização do botão 'Assinar' */
+.btn-assinar {
+    background-color: #388e8e; /* Cor verde/teal da imagem */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-/* Tela 9 */
-/* Tela 10 */
-/* Tela 11 */
-/* Tela 12 */
-/* Tela 13 */
-/* Tela 14 */
-/* Tela 15 */
-/* Tela 16 */
-/* Tela 17 */
-/* Tela 18 */
-/* Tela 19.1 */
-/* Tela 19.2 */
-/* Tela 20 */
+.btn-assinar:hover {
+    background-color: #2b7a7a;
+}
+
+
+.tags-section {
+   
+    max-width: 800px; 
+    margin: 0 auto 1.5rem auto; 
+    
+    
+    display: flex;
+    gap: 12px; 
+    justify-content: space-between; 
+
+    
+    width: auto; 
+}
+
+.divbox {
+    background-color: #fff; 
+    padding: 10px 15px;
+    border: 1px solid #eee; 
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500; 
+    color: #333;
+    flex-grow: 1; 
+    text-align: center;
+
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.copyright {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    color: #555;
+    padding: 0 0 1rem 0;  
+}
