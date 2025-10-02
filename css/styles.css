@@ -16,6 +16,7 @@
 
 
 body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(232, 232, 232);
     font-size: 1rem;
@@ -29,16 +30,19 @@ body {
         "menu menu"
         "main ldir"
         "footer footer";
-    height: 98vh;
-
+    height: 100vh;
 }
 
+/* Estilização header */
 header {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
     grid-area: header;
     background-color: rgb(255, 255, 255);
     padding: .5rem;
     display: grid;
-    grid-template-columns: .1fr 1fr 0.3fr;
+    grid-template-columns: .1fr 1fr 0.4fr;
     /* numero de colunas maximo 3 */
     grid-template-rows: .1fr;
     /* numero de linhas maximo 1 */
@@ -49,23 +53,18 @@ header {
 
 .nomePrograma {
     grid-area: areaNomePrograma;
-    background-color: rgb(239, 193, 193);
-
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     font-weight: bold;
-
-
 }
 
 .Menu {
     grid-area: areaMenu;
     background-color: rgb(255, 255, 255);
-
-
+    margin-left: 2%;
 }
 
 .main {
@@ -74,16 +73,60 @@ header {
     padding: var(--space-md);
 }
 
+ui {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+li > a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.inputHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin-right: 5%;
+}
+
+.inputHeader > input{
+    height: 70%;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.753);
+}
+
+.inputHeader > button{
+    height: 80%;
+    width: 20%;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 2px solid #97C3C0;
+    color: #97C3C0;
+}
+
+/* Estilização footer */
+
 footer {
+    bottom: 0;
+    position: fixed;
+    padding-top: 2%;
+    height: 17%;
+    width: 100vw;
     grid-area: footer;
     background-color: #ffffff;
-    padding: .5rem;
-    display: grid;
-    grid-template-columns: .1fr;
-    /* numero de colunas maximo 2 */
-    grid-template-rows: .1fr;
-    /* numero de linhas maximo 3 */
-
 }
 
 .areaInstagram {
@@ -111,47 +154,30 @@ footer {
     background-color: darkgoldenrod;
 }
 
-
-ui {
-    display: flex;
-}
-
-li {
-    list-style: none;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-li:hover {
-    background-color: bisque;
-}
-
-
 .rodape {
-    display: grid;
-    width: 191vh;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 8px;
-    align-items: first baseline;
-    margin: 8px;
-    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: rgb(255, 255, 255);
-    padding: 1.5rem;
-    margin-top: .5rem;
-
-
 }
 
 .divbox {
     display: flex;
+    width: 16%;
     flex-direction: column;
     font-weight: bold;
     align-items: first baseline;
     justify-content: center;
-    border: 0.5px solid black;
-    border-radius: 0.5px;
+    border: 0.5px solid rgba(128, 128, 128, 0.315);
+    border-radius: 8px;
     padding: 1rem;
     background-color: rgb(255, 255, 255);
 
 }
+
+footer > p{
+    margin-left: 1%;
+}
+
+/* Estilização do resto do codigo */
