@@ -183,7 +183,7 @@ footer > p{
 .quadrado_1 {
   width: 150px;
   height: 150px;
-  background-color: red;
+  background-color: rgb(232, 232, 232);
   border: 3px solid black;
   border-radius: 8px;
 }
