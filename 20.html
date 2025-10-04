@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina 20</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/20.css">
 </head>
+
 <body>
+
     <header>
         <div class="nomePrograma">
             HABIT
@@ -20,14 +23,63 @@
                 <li><a href="#">Admin</a></li>
             </ui>
         </nav>
-        <div>
-            <input type="text" placeholder="Pesquisar...">
+        <div class="inputHeader">
+            <input type="text" placeholder="   Pesquisar...">
             <button>Buscar</button>
             <button>Entrar</button>
         </div>
     </header>
-    <main></main>
-    <aside></aside>
+
+    <div class="main-wrapper">
+        <div class="main-content-container">
+
+            <aside class="profile-panel">
+                <h2>Perfil</h2>
+                <div class="profile-image-placeholder"></div>
+                <input type="text" class="profile-input" placeholder="Nome">
+                <input type="text" class="profile-input" placeholder="Bio">
+                <button class="btn-save">Salvar</button>
+            </aside>
+
+            <main class="posts-panel">
+                <h2>Suas Postagens</h2>
+
+                <div class="post-card">
+                    <div class="post-card-image"></div>
+                    <div class="post-card-details">
+                        <span class="post-card-status">Rascunho</span>
+                        <span class="post-card-title">Post 1</span>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-card-image"></div>
+                    <div class="post-card-details">
+                        <span class="post-card-status">Publicado</span>
+                        <span class="post-card-title">Post 2</span>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-card-image"></div>
+                    <div class="post-card-details">
+                        <span class="post-card-status">Em análise</span>
+                        <span class="post-card-title">Comentário 1</span>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div class="post-card-image"></div>
+                    <div class="post-card-details">
+                        <span class="post-card-status">Publicado</span>
+                        <span class="post-card-title">Comentário 2</span>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
     <footer>
         <div class="rodape">
             <div class="divbox">Instagram</div>
@@ -37,7 +89,9 @@
             <div class="divbox">Books</div>
         </div>
         <p> &copy; 2025 Meu Site. </p>
-    
+
     </footer>
+
 </body>
+
 </html>
