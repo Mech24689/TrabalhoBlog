@@ -1,0 +1,189 @@
+:root {
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(232, 232, 232);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Estilização header */
+header {
+    width: 100vw;
+    height: 5rem;
+    /* position: fixed; */
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: .1fr 1fr 0.4fr;
+    /* numero de colunas maximo 3 */
+    grid-template-rows: .1fr;
+    /* numero de linhas maximo 1 */
+    grid-template-areas: "areaNomePrograma areaMenu areaVersao";
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nomePrograma {
+    grid-area: areaNomePrograma;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.Menu {
+    grid-area: areaMenu;
+    background-color: rgb(255, 255, 255);
+    margin-left: 2%;
+}
+
+ui {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+li > a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.inputHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin-right: 5%;
+}
+
+.inputHeader > input{
+    font-size: 1rem;
+    height: 70%;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.753);
+}
+
+.inputHeader > button{
+    font-size: 1rem;
+    height: 80%;
+    width: 20%;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 2px solid #97C3C0;
+    color: #97C3C0;
+}
+
+/* Estilização footer */
+
+footer {
+    /* position: fixed; */
+    padding-top: 2%;
+    height: 7rem;
+    width: 100vw;
+    grid-area: footer;
+    background-color: #ffffff;
+}
+
+.areaInstagram {
+    grid-area: areaInstagram;
+    background-color: rgb(255, 0, 0);
+}
+
+.areawork {
+    grid-area: areaWork;
+    background-color: blueviolet;
+}
+
+.areBags {
+    grid-area: areaBags;
+    background-color: brown;
+}
+
+.areaLamp {
+    grid-area: areaLamp;
+    background-color: coral;
+}
+
+.areaBooks {
+    grid-area: areaBooks;
+    background-color: darkgoldenrod;
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.divbox {
+    display: flex;
+    width: 16%;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: first baseline;
+    justify-content: center;
+    border: 0.5px solid rgba(128, 128, 128, 0.315);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+
+}
+
+footer > p{
+    margin-left: 1%;
+}
+
+/* Estilização do resto do codigo */
+
+/* Tela 10 */
+.section-10{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+
+.quadrado_1 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 8px;
+}
