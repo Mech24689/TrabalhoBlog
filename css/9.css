@@ -107,21 +107,19 @@ nav.Menu ul li a {
 }
 
 
-
-
-/* Em telas de tablet (max-width: 992px), o grid terá 2 colunas */
+/* RESPONSIVIDADE */
 @media (max-width: 992px) {
   .posts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Em telas de celular (max-width: 600px), o grid terá 1 coluna */
+
 @media (max-width: 600px) {
   .posts-grid {
     grid-template-columns: 1fr;
   }
-  /* Opcional: ajustar o padding do contêiner principal para telas menores */
+
   .section-9.category-main {
     padding: 1.5rem 0.5rem; 
   }
