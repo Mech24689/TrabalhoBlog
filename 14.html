@@ -28,68 +28,75 @@
     </header>
 
 
-
 <main class="section-14">
-    <aside class="sidebar"> 
-        <div class="box-model">
-        <ul class="ui-menu">
-            <li><h3>Menu</h3></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Criar Post</a></li>
-            <li><a href="#">Escolhas do Editor</a></li>
-            <li><a href="#">Usuários</a></li>
-            <li><a href="#">Fila de revisão</a></li>
-            <li><a href="#">Fila de comentários</a></li>
-        </ul>
-    </aside>
+     <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2 class="menu-title">Menu</h2>
+            <ul class="menu-list">
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Criar Post</a></li>
+                <li class="active"><a href="#">Escolhas do Editor</a></li>
+                <li><a href="#">Usuários</a></li>
+                <li><a href="#">Fila de revisão</a></li>
+                <li><a href="#">Fila de comentários</a></li>
+            </ul>
+        </aside>
 
-    <div class="content"> 
-
-        <div class="stats">
-            <div class="card">
-                <span class="card-title">Posts</span>
-                <span class="card-value">128</span>
-            </div>
-            <div class="card">
-                <span class="card-title">Visualizações</span>
-                <span class="card-value">54k</span>
-            </div>
-            <div class="card">
-                <span class="card-title">Inscritos</span>
-                <span class="card-value">12k</span>
-            </div>
-            <div class="card">
-                <span class="card-title">Pendências</span>
-                <span class="card-value">7</span>
-            </div>
-        </div>
-        
-        <section class="section-">
-            <h3>Criar Post</h3>
-            <input type="text" placeholder="Título">
-            <textarea placeholder="Escreva aqui... (Editor simulador)"></textarea>
+        <main class="content-area">
             
-            <div class="form-row">
-                <input type="text" placeholder="Categorias e tags">
-                <label class="file-label"> Upload da imagem de capa
-                    <input type="file" class="hidden-file-input">
-                </label>
-            </div>
-            
-            <div class="btns">
-                <button class="rascunho">Salvar rascunho</button>
-                <button class="revisao">Enviar para revisão</button>
-                <button class="publicar">Publicar (admin)</button>
-            </div>
-        </section>
+            <section class="metric-cards">
+                <div class="card metric-card">
+                    <p>Posts</p>
+                    <span class="metric-value">128</span>
+                </div>
+                <div class="card metric-card">
+                    <p>Visualizações</p>
+                    <span class="metric-value">54k</span>
+                </div>
+                <div class="card metric-card">
+                    <p>Inscritos</p>
+                    <span class="metric-value">12k</span>
+                </div>
+                <div class="card metric-card">
+                    <p>Pendências</p>
+                    <span class="metric-value">7</span>
+                </div>
+            </section>
 
-    </div> 
-</main>
+            <section class="card editor-panel">
+                <h3 class="panel-title">Escolhas do Editor</h3>
+                <input type="text" placeholder="Buscar posts..." class="search-posts-input">
+                
+                <div class="post-list-header">
+                    <strong>Post</strong>
+                </div>
 
-
-
-    <aside></aside>
-    <footer>
+                <div class="post-list">
+                    <div class="post-item">
+                        <span>Post #1</span>
+                        <button class="btn btn-remove">Remover</button>
+                    </div>
+                    <div class="post-item">
+                        <span>Post #2</span>
+                        <button class="btn btn-schedule">Agendar</button>
+                    </div>
+                    <div class="post-item">
+                        <span>Post #3</span>
+                        <button class="btn btn-schedule">Agendar</button>
+                    </div>
+                    <div class="post-item">
+                        <span>Post #4</span>
+                        <button class="btn btn-remove">Remover</button>
+                    </div>
+                    <div class="post-item">
+                        <span>Post #5</span>
+                        <button class="btn btn-schedule">Agendar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<footer>
         <div class="rodape">
             <div class="divbox">Instagram</div>
             <div class="divbox">Work</div>

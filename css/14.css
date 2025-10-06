@@ -170,21 +170,150 @@ footer > p{
 .section-14{
     background-color: rgb(224, 227, 230);
 }
-.box-model {
-  display: flex;
-    width: 16%;
-    flex-direction: column;
-    font-weight: bold;
-    align-items: first baseline;
-    justify-content: center;
-    border: 0.5px solid rgba(128, 128, 128, 0.315);
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: rgb(255, 255, 255);
-}
-.ui-menu{
-    list-style: disc;
-    padding: 1rem;
-    border-radius: 8px;
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
+/* ---------------------------------------------------- */
+/* 3. BARRA LATERAL (SIDEBAR) */
+/* ---------------------------------------------------- */
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    height: fit-content; /* Ocupa apenas a altura do conteúdo */
+}
+
+.menu-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.menu-list {
+    list-style: none;
+    padding-left: 15px; /* Para o marcador de lista/nível */
+}
+
+.menu-list li {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.menu-list li a:hover {
+    color: #000;
+}
+
+.menu-list .active a {
+    font-weight: bold;
+    color: #000;
+}
+
+/* ---------------------------------------------------- */
+/* 4. CARDS DE MÉTRICAS */
+/* ---------------------------------------------------- */
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.metric-cards {
+    display: grid;
+    /* 4 colunas de tamanho igual */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.metric-card {
+    text-align: left;
+}
+
+.metric-card p {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.metric-value {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ---------------------------------------------------- */
+/* 5. PAINEL DO EDITOR */
+/* ---------------------------------------------------- */
+.editor-panel {
+    padding: 25px;
+}
+
+.panel-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.search-posts-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.post-list-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Estilo específico dos botões do painel */
+.btn-remove {
+    background-color: transparent;
+    color: #dc3545; /* Vermelho */
+    border: 1px solid #dc3545;
+    padding: 6px 15px;
+}
+
+.btn-remove:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-schedule {
+    background-color: transparent;
+    color: #28a745; /* Verde */
+    border: 1px solid #28a745;
+    padding: 6px 15px;
+}
+
+.btn-schedule:hover {
+    background-color: #28a745;
+    color: white;
+}
