@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HABIT - Dashboard Admin</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <nav class="navegacao-principal">
             <div class="logo">HABIT</div>
             <ul class="menu-navegacao">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Páginas</a></li>
-                <li><a href="#">Destaques</a></li>
-                <li><a href="#">Assinar</a></li>
-                <li><a href="#">Admin</a></li>
+                <li><a href="08.Index.html">Início</a></li>
+                <li><a href="20-Perfil-Usuario.html">Páginas</a></li>
+                <li><a href="10.Destaques.html">Destaques</a></li>
+                <li><a href="11.Assinatura.html">Assinar</a></li>
+                <li><a href="12.Admin-Gerenciamento-Categorias.html">Admin</a></li>
             </ul>
         </nav>
         <div class="area-busca">
             <input type="text" placeholder="Buscar..." class="campo-busca">
-            <button class="botao-busca">Buscar</button>
-            <button class="botao-entrar">Entrar</button>
+            <a href="18.Pagina-Resultados-Busca.html"><button class="botao-busca">Buscar</button></a>
+            <a href="19.1.Login.html"><button class="botao-entrar">Entrar</button></a>
         </div>
     </header>
 
-<div class="wrapper-admin">
+    <div class="wrapper-admin">
 
-<main class="container-perfil">
-    
-    <section class="perfil-info">
-        <h2 class="titulo-perfil">Perfil</h2>
-        <div class="imagem-placeholder-perfil"></div>
-        <form class="formulario-perfil">
-            <div class="campo-perfil">
-                <input type="text" id="nome-perfil" class="input-perfil" placeholder="Nome">
-            </div>
-            
-            <div class="campo-perfil">
-                <input id="bio-perfil" class="input-perfil textarea-perfil" placeholder="Bio"></input>
-            </div>
-            
-            <button type="submit" class="botao-perfil-salvar">Salvar</button>
-        </form>
-    </section>
+        <main class="container-perfil">
 
-    <section class="postagens-usuario">
-        <h2 class="titulo-postagens">Suas Postagens</h2>
-
-        <div class="lista-postagens">
-
-            <div class="card-postagem-perfil">
+            <section class="perfil-info">
+                <h2 class="titulo-perfil">Perfil</h2>
                 <div class="imagem-placeholder-perfil"></div>
-                <div class="conteudo-postagem-perfil">
-                    <p class="status-postagem">Rascunho</p>
-                    <h3 class="titulo-postagem">Post 1</h3>
-                </div>
-            </div>
+                <form class="formulario-perfil">
+                    <div class="campo-perfil">
+                        <input type="text" id="nome-perfil" class="input-perfil" placeholder="Nome">
+                    </div>
 
-            <div class="card-postagem-perfil">
-                <div class="imagem-placeholder-perfil"></div>
-                <div class="conteudo-postagem-perfil">
-                    <p class="status-postagem">Publicado</p>
-                    <h3 class="titulo-postagem">Post 2</h3>
-                </div>
-            </div>
-            
-            <div class="card-postagem-perfil">
-                <div class="imagem-placeholder-perfil"></div>
-                <div class="conteudo-postagem-perfil">
-                    <p class="status-postagem">Em análise</p>
-                    <h3 class="titulo-postagem">Comentário 1</h3>
-                </div>
-            </div>
+                    <div class="campo-perfil">
+                        <input id="bio-perfil" class="input-perfil textarea-perfil" placeholder="Bio"></input>
+                    </div>
 
-            <div class="card-postagem-perfil">
-                <div class="imagem-placeholder-perfil"></div>
-                <div class="conteudo-postagem-perfil">
-                    <p class="status-postagem">Publicado</p>
-                    <h3 class="titulo-postagem">Comentário 2</h3>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-</main>
+                    <button type="submit" class="botao-perfil-salvar">Salvar</button>
+                </form>
+            </section>
 
-</div>
+            <section class="postagens-usuario">
+                <h2 class="titulo-postagens">Suas Postagens</h2>
+
+                <div class="lista-postagens">
+
+                    <div class="card-postagem-perfil">
+                        <div class="imagem-placeholder-perfil"></div>
+                        <div class="conteudo-postagem-perfil">
+                            <p class="status-postagem">Rascunho</p>
+                            <h3 class="titulo-postagem">Post 1</h3>
+                        </div>
+                    </div>
+
+                    <div class="card-postagem-perfil">
+                        <div class="imagem-placeholder-perfil"></div>
+                        <div class="conteudo-postagem-perfil">
+                            <p class="status-postagem">Publicado</p>
+                            <h3 class="titulo-postagem">Post 2</h3>
+                        </div>
+                    </div>
+
+                    <div class="card-postagem-perfil">
+                        <div class="imagem-placeholder-perfil"></div>
+                        <div class="conteudo-postagem-perfil">
+                            <p class="status-postagem">Em análise</p>
+                            <h3 class="titulo-postagem">Comentário 1</h3>
+                        </div>
+                    </div>
+
+                    <div class="card-postagem-perfil">
+                        <div class="imagem-placeholder-perfil"></div>
+                        <div class="conteudo-postagem-perfil">
+                            <p class="status-postagem">Publicado</p>
+                            <h3 class="titulo-postagem">Comentário 2</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
 
     <footer class="rodape">
         <div class="links-rodape">
@@ -99,4 +101,5 @@
         <p>&copy; 2025 Meu Site.</p>
     </footer>
 </body>
+
 </html>

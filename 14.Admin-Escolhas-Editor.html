@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HABIT - Dashboard Admin</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <nav class="navegacao-principal">
             <div class="logo">HABIT</div>
             <ul class="menu-navegacao">
                 <li><a href="08.Index.html">Início</a></li>
-                <li><a href="#">Páginas</a></li>
+                <li><a href="20-Perfil-Usuario.html">Páginas</a></li>
                 <li><a href="10.Destaques.html">Destaques</a></li>
                 <li><a href="11.Assinatura.html">Assinar</a></li>
-                <li><a href="13.Admin-Criar-Post.html">Admin</a></li>
+                <li><a href="12.Admin-Gerenciamento-Categorias.html">Admin</a></li>
             </ul>
         </nav>
         <div class="area-busca">
@@ -25,92 +27,93 @@
         </div>
     </header>
 
-<div class="wrapper-admin">
-<aside class="menu-lateral">
-    <h2 class="titulo-menu-lateral">Menu</h2>
-    <ul class="lista-menu-lateral">
-        <li><a href="12.Admin-Gerenciamento-Categorias.html">• Categorias</a></li>
-        <li><a href="13.Admin-Criar-Post.html">• Criar Post</a></li>
-        <li class="item-menu-separador item-menu-ativo"><a href="14.Admin-Escolhas-Editor.html">• Escolhas do Editor</a></li> 
-        <li><a href="15.Admin-Gerenciamento-Usuarios.html">• Usuários</a></li>
-        <li><a href="16.Admin-Fila-Revisao.html">• Fila de revisão</a></li>
-        <li><a href="17.Admin-Fila-Comentarios.html">• Fila de comentários</a></li>
-    </ul>
-</aside>
+    <div class="wrapper-admin">
+        <aside class="menu-lateral">
+            <h2 class="titulo-menu-lateral">Menu</h2>
+            <ul class="lista-menu-lateral">
+                <li><a href="12.Admin-Gerenciamento-Categorias.html">• Categorias</a></li>
+                <li><a href="13.Admin-Criar-Post.html">• Criar Post</a></li>
+                <li class="item-menu-separador item-menu-ativo"><a href="14.Admin-Escolhas-Editor.html">• Escolhas do
+                        Editor</a></li>
+                <li><a href="15.Admin-Gerenciamento-Usuarios.html">• Usuários</a></li>
+                <li><a href="16.Admin-Fila-Revisao.html">• Fila de revisão</a></li>
+                <li><a href="17.Admin-Fila-Comentarios.html">• Fila de comentários</a></li>
+            </ul>
+        </aside>
 
-<main class="conteudo-dashboard">
+        <main class="conteudo-dashboard">
 
-    <section class="cartoes-status">
-        <div class="cartao-status">
-            <p class="titulo-status">Posts</p>
-            <div class="valor-status">128</div>
-        </div>
-        <div class="cartao-status">
-            <p class="titulo-status">Visualizações</p>
-            <div class="valor-status">54k</div>
-        </div>
-        <div class="cartao-status">
-            <p class="titulo-status">Inscritos</p>
-            <div class="valor-status">12k</div>
-        </div>
-        <div class="cartao-status">
-            <p class="titulo-status">Pendências</p>
-            <div class="valor-status">7</div>
-        </div>
-    </section>
-
-    <section class="secao-escolhas-editor-admin">
-        <h2 class="titulo-secao-admin">Escolhas do Editor</h2>
-        
-        <div class="area-busca-posts">
-            <input type="text" placeholder="Buscar posts" class="campo-busca-admin">
-        </div>
-
-        <div class="lista-posts-editor">
-            <div class="cabecalho-lista-editor">
-                <span class="coluna-post">Post</span>
-                <span class="coluna-acoes"></span>
-            </div>
-
-            <div class="linha-post-editor">
-                <span class="coluna-post">Post #1</span>
-                <div class="coluna-acoes">
-                    <button class="botao-acao-editor botao-remover">Remover</button>
+            <section class="cartoes-status">
+                <div class="cartao-status">
+                    <p class="titulo-status">Posts</p>
+                    <div class="valor-status">128</div>
                 </div>
-            </div>
-            
-            <div class="linha-post-editor">
-                <span class="coluna-post">Post #2</span>
-                <div class="coluna-acoes">
-                    <button class="botao-acao-editor botao-agendar">Agendar</button>
+                <div class="cartao-status">
+                    <p class="titulo-status">Visualizações</p>
+                    <div class="valor-status">54k</div>
                 </div>
-            </div>
-            
-            <div class="linha-post-editor">
-                <span class="coluna-post">Post #3</span>
-                <div class="coluna-acoes">
-                    <button class="botao-acao-editor botao-agendar">Agendar</button>
+                <div class="cartao-status">
+                    <p class="titulo-status">Inscritos</p>
+                    <div class="valor-status">12k</div>
                 </div>
-            </div>
+                <div class="cartao-status">
+                    <p class="titulo-status">Pendências</p>
+                    <div class="valor-status">7</div>
+                </div>
+            </section>
 
-            <div class="linha-post-editor">
-                <span class="coluna-post">Post #4</span>
-                <div class="coluna-acoes">
-                    <button class="botao-acao-editor botao-remover">Remover</button>
-                </div>
-            </div>
+            <section class="secao-escolhas-editor-admin">
+                <h2 class="titulo-secao-admin">Escolhas do Editor</h2>
 
-            <div class="linha-post-editor">
-                <span class="coluna-post">Post #5</span>
-                <div class="coluna-acoes">
-                    <button class="botao-acao-editor botao-agendar">Agendar</button>
+                <div class="area-busca-posts">
+                    <input type="text" placeholder="Buscar posts" class="campo-busca-admin">
                 </div>
-            </div>
-        </div>
-    </section>
-</main>
 
-</div>
+                <div class="lista-posts-editor">
+                    <div class="cabecalho-lista-editor">
+                        <span class="coluna-post">Post</span>
+                        <span class="coluna-acoes"></span>
+                    </div>
+
+                    <div class="linha-post-editor">
+                        <span class="coluna-post">Post #1</span>
+                        <div class="coluna-acoes">
+                            <button class="botao-acao-editor botao-remover">Remover</button>
+                        </div>
+                    </div>
+
+                    <div class="linha-post-editor">
+                        <span class="coluna-post">Post #2</span>
+                        <div class="coluna-acoes">
+                            <button class="botao-acao-editor botao-agendar">Agendar</button>
+                        </div>
+                    </div>
+
+                    <div class="linha-post-editor">
+                        <span class="coluna-post">Post #3</span>
+                        <div class="coluna-acoes">
+                            <button class="botao-acao-editor botao-agendar">Agendar</button>
+                        </div>
+                    </div>
+
+                    <div class="linha-post-editor">
+                        <span class="coluna-post">Post #4</span>
+                        <div class="coluna-acoes">
+                            <button class="botao-acao-editor botao-remover">Remover</button>
+                        </div>
+                    </div>
+
+                    <div class="linha-post-editor">
+                        <span class="coluna-post">Post #5</span>
+                        <div class="coluna-acoes">
+                            <button class="botao-acao-editor botao-agendar">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
 
     <footer class="rodape">
         <div class="links-rodape">
@@ -123,4 +126,5 @@
         <p>&copy; 2025 Meu Site.</p>
     </footer>
 </body>
+
 </html>
