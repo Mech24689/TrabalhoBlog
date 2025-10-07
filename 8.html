@@ -3,96 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina 8</title>
-    <link rel="stylesheet" href="css/8.css">
+    <title>HABIT - Navegue por Tópicos</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="nomePrograma">
-            HABIT
-        </div>
-        <nav class="Menu">
-            <ui>
+    <header class="cabecalho">
+        <nav class="navegacao-principal">
+            <div class="logo">HABIT</div>
+            <ul class="menu-navegacao">
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Paginas</a></li>
+                <li><a href="#">Páginas</a></li>
                 <li><a href="#">Destaques</a></li>
                 <li><a href="#">Assinar</a></li>
                 <li><a href="#">Admin</a></li>
-            </ui>
+            </ul>
         </nav>
-        <div class="inputHeader">
-            <input type="text" placeholder="   Pesquisar...">
-            <button>Buscar</button>
-            <button>Entrar</button>
+        <div class="area-busca">
+            <input type="text" placeholder="Buscar..." class="campo-busca">
+            <a href="18.Pagina-Resultados-Busca.html"><button class="botao-busca">Buscar</button></a>
+            <a href="19.1.Login.html"><button class="botao-entrar">Entrar</button></a>
         </div>
     </header>
-    <main class="section-8">
-        <section class="section-1">
-            <div class="campo1">
-                <h1>Navegue por tópicos de interesse</h1>
-                <p>Descubra conteúdos por categorias, posts em destaques e as escolhas do editor.</p>
-                <div class="areaButton">
-                    <button>Explorar categorias</button>
-                    <button>Assine a newsletter</button>
-                </div>
-            </div>
-            <div class="campo2">
-                <div class="area1"></div>
+
+    <main class="conteudo-principal">
+        <section class="secao-topicos">
+            <h1 class="titulo-secao">Navegue por tópicos de interesse</h1>
+            <p class="descricao-secao">Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+            <div class="acoes-topicos">
+                <a href="09.Categoria.html"><button class="botao-primario">Explorar categorias</button></a>
+                <a href="11.Assinatura.html"><button class="botao-secundario">Assine a newsletter</button></a>
             </div>
         </section>
-        <section class="section-2">
-            <h2>Categorias Populares</h2>
-            <div class="area1">
-                <div><span>Work</span></div>
-                <div><span>Books</span></div>
-                <div><span>Techno</span></div>
+
+        <section class="categorias">
+            <h2 class="titulo-categoria">Categorias Populares</h2>
+            <div class="lista-categorias-populares">
+                <div class="cartao-categoria">Work</div>
+                <div class="cartao-categoria">Books</div>
+                <div class="cartao-categoria">Techno</div>
+            </div>
+
+            <h2 class="titulo-categoria">Todas as Categorias</h2>
+            <div class="lista-todas-categorias">
+                <div class="item-categoria">Negócios</div>
+                <div class="item-categoria">Techno</div>
+                <div class="item-categoria">Produtividade</div>
+                <div class="item-categoria">Filmes</div>
+                <div class="item-categoria">Lifestyle</div>
+                <div class="item-categoria">Educação</div>
+                <div class="item-categoria">Mailing</div>
+                <div class="item-categoria">eCommerce</div>
+                <div class="item-categoria">Alimentação</div>
+                <div class="item-categoria">Social</div>
             </div>
         </section>
-        <section class="section-3">
-            <h2>Todas as Categorias</h2>
-            <div class="area1">
-                <div>Negócios</div>
-                <div>Techno</div>
-                <div>Produtividade</div>
-                <div>Filmes</div>
-                <div>Lifestyle</div>
-                <div>Educação</div>
-                <div>Mailing</div>
-                <div>eCommerce</div>
-                <div>Alimentação</div>
-                <div>Social</div>
+
+        <section class="posts-destaque-e-escolhas">
+            <div class="posts-destaque">
+                <h2 class="titulo-posts">Postagens em Destaque</h2>
+
+                <article class="cartao-post">
+                    <div class="data-e-tag">31 Jul 2025 • Destaque</div>
+                    <h3 class="titulo-post">Erros de Design que Todos Devem Evitar</h3>
+                    <div class="tempo-leitura">3 min de leitura</div>
+                </article>
+
+                <article class="cartao-post">
+                    <div class="data-e-tag">31 Jul 2025 • Destaque</div>
+                    <h3 class="titulo-post">As Maiores Empresas por Receita</h3>
+                </article>
             </div>
-        </section>
-        <section class="section-4">
-            <div class="area1">
-                <h2>Postagens em Destaque</h2>
-                <div class="subarea">
-                    <div>
-                        <p>31 jul 2025 Destaque</p>
-                        <h3>Erros de Design que Todos Devem Evitar</h3>
-                        <p>3 min de leitura</p>
-                    </div>
-                    <div>
-                        <p>31 jul 2025 Destaque</p>
-                        <h3>Erros de Design que Todos Devem Evitar</h3>
-                        <p>3 min de leitura</p>
-                    </div>
-                </div>
-            </div>
-            <div class="area2"></div>
-            <div></div>
+
+            <aside class="escolhas-editor">
+                <h2 class="titulo-escolhas">Escolhas do Editor</h2>
+                <ul class="lista-escolhas">
+                    <li>O uso negativo da internet</li>
+                    <li>O segredo do brainstorm</li>
+                    <li>Escalar para pequenos negócios</li>
+                    <li>O futuro do trabalho remoto</li>
+                </ul>
+            </aside>
         </section>
     </main>
-    <footer>
-        <div class="rodape">
-            <div class="divbox">Instagram</div>
-            <div class="divbox">Work</div>
-            <div class="divbox">Bags</div>
-            <div class="divbox">Lamp</div>
-            <div class="divbox">Books</div>
+
+    <footer class="rodape">
+        <div class="links-rodape">
+            <span>Instagram</span>
+            <span>Work</span>
+            <span>Bags</span>
+            <span>Lamp</span>
+            <span>Books</span>
         </div>
-        <p> &copy; 2025 Meu Site. </p>
-    
+        <p>&copy; 2025 Meu Site.</p>
     </footer>
 </body>
 </html>
